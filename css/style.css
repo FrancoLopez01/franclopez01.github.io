@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins;ital,wght@0,400;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*----Navigation bar----*/
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(#2b1055, #7597de);
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+
+header .logo {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+header ul li a:hover ,
+header ul li a.active {
+    background: #fff;
+    color: #2b1055;
+}
+
+
+/*----Navigation bar----*/
+
+
+
+/*----Section img----*/
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #1c0522, transparent);
+    z-index: 1000;
+}
+
+section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#moon {
+    mix-blend-mode: screen;
+}
+
+section img#mountains_front {
+    z-index: 10;
+}
+
+
+/*---Moon Light---*/
+
+#text {
+    position: absolute;
+    color: #fff;
+    white-space: nowrap;
+    font-size: 7.5vw;
+    z-index: 9;
+}
+
+
+/*---BTN Explore---*/
+
+#btn {
+    text-decoration: none;
+    padding: 0px 30px;
+    display: inline-block;
+    border-radius: 40px;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5em;
+    z-index: 9;
+    transform: translateY(100px);
+}
+
+.sec {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    text-align: center;
+}
+
+.sec h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec p {
+    font-size: 1em;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.sec2 {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    text-align: center;
+    border: 2px solid rgba(255, 3, 87, 0.5);
+    background: rgb(36,12,83);
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+    backdrop-filter: blur(15px);
+}
+
+.sec2 h2 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.sec2 p {
+    font-size: 1em;
+    margin-left: 50px;
+    color: #fff;
+}
+
+.sec3 {
+    position: relative;
+    padding: 100px;
+    background: #1c0522;
+    text-align: center;
+    border: 2px solid rgba(255, 3, 87, 0.5);
+    background: rgb(36,12,83);
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+    backdrop-filter: blur(15px);
+}
+
+.sec3 h2 {
+    font-size: 3.5em;
+    margin-bottom: 50px;
+    color: #fff;
+}
+
+.sec3 p {
+    font-size: 1em;
+    margin-left: -50px;
+    color: #fff;
+}
+
+
+footer {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    border: 2px solid rgba(255, 3, 87, 0.5);
+    background: rgb(36,12,83);
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+    backdrop-filter: blur(15px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1)  {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 10px;
+    font-weight: bold;
+    bottom: 40%;
+}
+
+footer p:nth-child(2) {
+    color: #fff;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social {
+    display: flex;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+}
+
+.about {
+    width: 100%;
+    padding: 100px 0px;
+    background: rgb(36,12,83);
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+}
+
+.about img{
+    height: auto;
+    width: 430px;
+    
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-text h2 {
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.about-text h5 {
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+
+.about-text p {
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+
+
+
+.social a {
+    width: 45px;
+    color: white;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9004d;
+    border-radius: 50%;
+    margin: 22px 10px;
+    text-decoration: none;
+}
+
+#iframemedio {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    transition: .3s;
+}
+
+.end {
+    position: absolute;
+    color: #f9004d;
+    bottom: 35px;
+    font-size: 14px;
+}
+
+
+
+.service {
+    background: #191919;
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+    width: 100%;
+    padding: 3px 0px;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    background: #191919;
+    
+}
+
+
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+    color: #162938;
+    background: red;
+}
+
+@media screen and (max-width: 1260px) {
+    body {
+        margin: 0 200px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    body {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    body {
+        width: 100%;
+        margin: 0;
+    }
+
+    header {
+        padding: 2rem;
+    }
+}
+
+
+
+
+
+/*Music player*/
+
+
+
+
+
+
+/* styling the outer music container */
+.music-container {
+    border: 2px solid rgba(255, 3, 87, 0.5);
+    background: rgb(36,12,83);
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+    box-shadow: inset -1px -1px 5px rgba(33,33,33, 0.5), inset 1px 1px 5px rgba(33,33,33,0.5); 
+    display: flex;
+    padding: 20px 30px;
+    position: relative;
+    margin: 100px 0;
+    z-index: 10;
+  }
+  
+  .img-container {
+    position: relative;
+    width: 110px;
+  }
+  
+  /* styling the image to look like a disc by placing a small circle in it*/
+  .img-container::after {
+    content: '';
+    background-color: #160413;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 82%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    transform: translate(-50%, 50%);
+  }
+  
+  /* using animation to make the image rotate continiously when music is playing */
+  .img-container img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 110px;
+    width: inherit;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: rotate 3s linear infinite;
+  
+    animation-play-state: paused;
+  }
+  
+  /* making sure the image rotates only when the music is playing */
+  .music-container.play .img-container img {
+    animation-play-state: running;
+  }
+  
+  /* creating the animation keyframe and setting the image to rotate 360 degrees continiously */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+  }
+  
+  /* styling the navigation buttons */
+  .action-btn {
+    border: 2px solid rgba(255, 3, 87, 0.5);
+    background: rgb(36,12,83);
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+    border: 0;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    margin: 0 20px;
+  }
+  
+  .action-btn.action-btn-big {
+    font-size: 30px;
+    outline: none;
+  }
+  
+  .action-btn:focus {
+    outline: 0;
+  }
+  
+  /* styling the music-info div by placing it under the music container */
+  .music-info {
+    border: 2px solid rgba(255, 3, 87, 0.5);
+    background: rgb(36,12,83);
+    background: linear-gradient(0deg, rgba(14, 2, 37, 0.993) 0%, rgb(26, 0, 17) 100%);
+    border-radius: 15px 15px 0 0;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: calc(100% - 40px);
+    padding: 10px 10px 10px 150px;
+    opacity: 0;
+    transform: translateY(0%);
+    transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+    z-index: 0;
+  }
+  
+  /* making the music info pop up when the music playing using the transform property*/
+  .music-container.play .music-info {
+    opacity: 1;
+    transform: translateY(-100%);
+  }
+  
+  .hamburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #fefefe;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+  
+  .music-info h4 {
+    margin: 0;
+    color: #df128a;
+  }
+  
+  /* styling the song progress container */
+  .progress-container {
+    background: #4811af;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    height: 4px;
+    width: 100%;
+  }
+  
+  /* styling the actual progress bar and making it flow along with the song*/
+  .progress {
+    background-color: #d9073d;
+    border-radius: 5px;
+    height: 100%;
+    width: 0%;
+    transition: width 0.1s linear;
+  }
